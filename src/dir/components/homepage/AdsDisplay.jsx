@@ -7,7 +7,7 @@ const AdsDisplay = () => {
   return (
     
     <div className="w-auto md:w-full h-fit px-2 ">
-        <img className=""  src={ADS_FOUR} alt="ads" />
+        <img className="h-16 w-full "  src={ADS_FOUR} alt="ads" />
         {/* <ImageCarousel /> */}
     </div>
     

@@ -6,10 +6,10 @@ export default function Socials() {
   return (
     <div className="w-full px-3 md:px-7 py-2">
       <div className="w-full flex-wrap md:flex justify-start space-y-6  md:space-y-0">
-        <div className=" w-full md:w-1/2 h-full md:h-[600px] flex justify-center items-center h- ">
-          <img src={SOCIALS} alt="social_badge" className="h-full rounded-full" />
+        <div className=" w-full md:w-1/2 h-full md:h-[600px] flex justify-center items-center ">
+          <img src={SOCIALS} alt="social_badge" className="h-52 rounded-xl" />
         </div>
-        <section className="w-full flex items-center md:w-1/2 ">
+        <section className="w-full flex items-center md:w-1/2">
           <div className="text-base leading-relaxed tracking-wide p-3 space-y-6">
             {/* <div className="pb-4 text-xl md:text-3xl font-bold">Socials</div>  */}
             {/* Introducing our newest feature: {" "}

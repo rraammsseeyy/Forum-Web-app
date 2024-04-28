@@ -46,7 +46,7 @@ relative  w-full mt-12 md:mt-4 justify-center items-center content-center flex  
                 initial={{ x: -260, opacity: 0 }}
                 className="inline-flex rounded-md   pt-2"
               >
-                <Link to="/register">
+                <Link to="/signup">
                   <span
                     alt="KMA Image"
                     className="bg-white inline-flex items-center justify-center px-6 py-4 border border-transparent text-base rounded-full blue  focus:outline-none focus:shadow-outline shadow-md shadow-blue-600/50  transition duration-500 ease-in-out  transform hover:-translate-z-1 hover:scale-110 font-bold"
@@ -72,7 +72,7 @@ relative  w-full mt-12 md:mt-4 justify-center items-center content-center flex  
               whileInView={{ opacity: 1 }}
               animate={{ scale: 1 }}
               alt="KMA"
-              className="w-2/4 height transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110   "
+              className="w-2/4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 rounded-xl"
             />
           </div>
         </div>
@@ -86,7 +86,7 @@ relative  w-full mt-12 md:mt-4 justify-center items-center content-center flex  
               whileInView={{ opacity: 1 }}
               animate={{ scale: 1 }}
               alt="KMA"
-              className="w-full height transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110   "
+              className="w-full height transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 rounded-xl   "
             />
           </div>
         </div>

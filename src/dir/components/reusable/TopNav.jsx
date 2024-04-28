@@ -35,7 +35,7 @@ export default function TopNav({ classColor }) {
                 alt="KMA Logo"
                 title="KMA Logo"
               /> */}
-              <h1 > BF </h1>
+              <h1 className="text-2xl"> BF </h1>
             </span>
           </Link>
         </div>
@@ -72,7 +72,7 @@ export default function TopNav({ classColor }) {
  
 
               <Fragment>
-                <Link  >
+                <Link to="/userprofile" >
                   <span className="rounded-full px-3 font-medium py-1 bg-white text-black responsive-header block cursor-pointer  lg:inline-block lg:mt-0 transition duration-500 ease-in-out  transform hover:-translate-z-1 hover:scale-110">
                     <FaUser className="blue" />
                   </span>

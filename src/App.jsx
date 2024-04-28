@@ -13,6 +13,10 @@ import  Socials  from "./dir/components/homepage/Socials";
 import  {TelegramAds}  from "./dir/components/homepage/TelegramAds";
 import { TipsCards } from "./dir/components/homepage/TipsCards";
 import HomePage from "./dir/components/homepage/HomePage";
+import BlogPage from "./dir/components/blog/BlogPage";
+import UserPage from "./dir/components/user/UserPage";
+import Signup from "./dir/pages/SignIn & SignUp/Signup";
+import Signin from "./dir/pages/SignIn & SignUp/Signin";
 
 
 function App() {
@@ -22,6 +26,10 @@ function App() {
         <Routes>
           <Route path="/social-corner" element={<Stack />}/>
           <Route path="/" element={<HomePage />}/>
+          <Route path="/blog-posts" element={<BlogPage />}/>
+          <Route path="/userprofile" element={<UserPage />}/>
+          <Route path="/signup" element={<Signup />}/>
+          <Route path="/signin" element={<Signin />}/>
         </Routes>
         {/* <Switch>
           <Route exact path="/social-corner" component={Socials} />

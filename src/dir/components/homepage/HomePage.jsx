@@ -8,7 +8,7 @@ import { TelegramAds } from './TelegramAds'
 const HomePage = () => {
   return (
     <div>
-        <AdsDisplay />
+        
         <Landing />
         <MarqueeImages  />
         <Socials  />

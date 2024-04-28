@@ -1,12 +1,14 @@
 import React from 'react'
 import Card from './Card'
+import BlogList from './BlogList'
 
-const Blog = () => {
+const BlogPage = () => {
   return (
     <div>
+        <BlogList />
         <Card />
     </div>
   )
 }
 
-export default Blog
+export default BlogPage
