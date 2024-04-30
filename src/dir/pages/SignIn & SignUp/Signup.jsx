@@ -6,15 +6,15 @@ const Signup = () => {
     <>
       <div className=''>
         <div className=" flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-          <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+          <div className=" sm:mx-auto sm:w-full sm:max-w-sm">
           
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
               Sign up your account
             </h2>
           </div>
 
-          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="#" method="POST">
+          <div className=" mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form className=" space-y-6" action="#" method="POST">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 text-left">
                   Email address
@@ -90,6 +90,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
+      
     </>
     
   )

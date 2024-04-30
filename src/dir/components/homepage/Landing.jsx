@@ -48,7 +48,7 @@ relative  w-full mt-12 md:mt-4 justify-center items-center content-center flex  
               >
                 <Link to="/signup">
                   <span
-                    alt="KMA Image"
+                    alt="Blockchain Image"
                     className="bg-white inline-flex items-center justify-center px-6 py-4 border border-transparent text-base rounded-full blue  focus:outline-none focus:shadow-outline shadow-md shadow-blue-600/50  transition duration-500 ease-in-out  transform hover:-translate-z-1 hover:scale-110 font-bold"
                   >
                     Get Started
@@ -71,7 +71,7 @@ relative  w-full mt-12 md:mt-4 justify-center items-center content-center flex  
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ opacity: 1 }}
               animate={{ scale: 1 }}
-              alt="KMA"
+              alt="Blockchain Image"
               className="w-2/4 transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 rounded-xl"
             />
           </div>
@@ -85,7 +85,7 @@ relative  w-full mt-12 md:mt-4 justify-center items-center content-center flex  
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ opacity: 1 }}
               animate={{ scale: 1 }}
-              alt="KMA"
+              alt="Blockchain Image"
               className="w-full height transition duration-500 ease-in-out  transform hover:-translate-y-1 hover:scale-110 rounded-xl   "
             />
           </div>
