@@ -1,7 +1,39 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Signin = () => {
+
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  // use the same process for all post method. make sure you put in practice all ive taught you
+  const handleSigin = async (e) => {
+    e.preventDefault();
+
+ 
+    try {
+      await axios
+        .post(`http://localhost:5000/signin`, {
+          email: email,
+          password: password,
+        })
+        .then(async (result) => {
+            setTimeout(() => {
+              // sign the user in after 3secs
+              navitage("/");
+            }, 3000);
+          
+        }).catch((error) => {
+
+          console.log(err);
+        })
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   return (
     <>
       <div className=" flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -13,7 +45,9 @@ const Signin = () => {
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-          <form className="space-y-6" action="#" method="POST">
+          <form 
+              onSubmit={handleSigin}
+              className="space-y-6" action="#" method="POST">
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 text-left">
                 Email address
@@ -23,6 +57,7 @@ const Signin = () => {
                   id="email"
                   name="email"
                   type="email"
+                  onChange={(e) => setEmail(e.target.value)}
                   autoComplete="email"
                   required
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -47,7 +82,8 @@ const Signin = () => {
                   name="password"
                   type="password"
                   autoComplete="current-password"
-                  required
+                  onChange={(e) => setPassword(e.target.value)}
+                  required  
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
